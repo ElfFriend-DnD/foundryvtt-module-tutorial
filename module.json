@@ -1,0 +1,25 @@
+{
+  "authors": [
+    {
+      "name": "You!"
+    }
+  ],
+  "description": "A simple module which adds a user specific to do list.",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "minimumCoreVersion": "0.8.8",
+  "name": "todo-list",
+  "scripts": [
+    "scripts/todo-list.js"
+  ],
+  "styles": [
+    "styles/todo-list.css"
+  ],
+  "title": "To Don't",
+  "version": "1"
+}

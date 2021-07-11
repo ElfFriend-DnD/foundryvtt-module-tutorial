@@ -1,0 +1,17 @@
+<form>
+  <ul class="todo-list flexcol">
+    {{#each todos}}
+    <li class="flexrow" data-todo-id="{{id}}">
+      <input type="checkbox" name="{{id}}.isDone" title="{{localize "TODO-LIST.mark-done"}}" data-dtype="Boolean" {{checked isDone}} />
+
+      <input type="text" value="{{label}}" name="{{id}}.label" data-dtype="String" />
+
+      <button type="button" title="{{localize "TODO-LIST.delete-todo"}}" data-action="delete" class="flex0 todo-list-icon-button">
+        <i class="fas fa-trash"></i>
+      </button>
+    </li>
+    {{/each}}
+  </ul>
+
+  <button type="button" data-action="create"><i class="fas fa-plus"></i> {{localize "TODO-LIST.add-todo"}}</button>
+</form>
